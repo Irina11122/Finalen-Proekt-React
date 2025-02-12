@@ -1,0 +1,335 @@
+body {
+  margin: 0;
+  background-color: #f5f5f5;
+  transition: all 0.5s ease;
+  font-family: 'Text Me One', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body.dark {
+  background-color: #051224;
+  color: #f5f5f5;
+}
+
+body.dark .navbar-container {
+  background-color: #2b3b52;
+  color: #f5f5f5;
+}
+.login-form-container {
+  background-color: #ccc;
+  padding: 20px 40px;
+  font-size: 2rem;
+  border: none;
+  color: rgb(255, 255, 255);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  & input {
+    background-color: #ececec;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    color: #120012;
+
+    border: none;
+  }
+
+  & button {
+    background-color: #ababab;
+    border: none;
+    border-radius: 12px;
+
+    &:hover {
+      background-color: #959595;
+    }
+  }
+}
+.navbar-container {
+  background-color: #120012;
+  color: #f5f5f5;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  transition: all 0.3s ease-in-out;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.logout-btn {
+  background-color: #ccc;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: 'Bruno Ace SC', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.logout-btn:hover {
+  background-color: #f5f5f5;
+}
+
+body.dark .logout-btn {
+  background-color: transparent;
+  border: 1px solid #00d0ff;
+  color: rgb(213, 252, 255);
+  text-shadow: 2px 2px 10px rgba(11, 210, 255, 0.8);
+  box-shadow: 0 0 5px #00d0ff, 0 0 10px #00d0ff, 0 0 9px #00d0ff inset;
+  letter-spacing: 1px;
+
+  &:hover {
+    background-color: #911212;
+    text-shadow: 2px 2px 10px #911212;
+    box-shadow: 0 0 5px #a60101, 0 0 10px #f44a4a, 0 0 9px #ff0000 inset;
+    border: 1px solid #ffffff;
+    color: rgb(255, 245, 245);
+  }
+}
+
+.theme-navbar-btn {
+  background-color: #323eaa;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-navbar-btn:hover {
+  background-color: #f5f5f5;
+}
+
+body.dark .theme-navbar-btn {
+  background-color: transparent;
+  border: 1.2px solid #00d0ff;
+  box-shadow: 0 0 5px #00d0ff, 0 0 10px #00d0ff, 0 0 9px #00d0ff inset;
+  color: #120012;
+}
+
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar-title {
+  animation: fadeInSlide 1s ease-in-out;
+}
+
+.form-container {
+  background-color: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border: none;
+  align-items: center;
+  height: 70vh;
+}
+
+body.dark .login-form-container {
+  background-color: none;
+  padding: 20px 40px;
+  font-size: 2rem;
+  border: 1px solid #00d0ff;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 5px #00d0ff, 0 0 10px #00d0ff, 0 0 9px #00d0ff inset;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  & input {
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid #00d0ff;
+    color: rgb(213, 252, 255);
+    text-shadow: 2px 2px 10px rgba(11, 210, 255, 0.8);
+    box-shadow: 0 0 5px #00d0ff, 0 0 10px #00d0ff, 0 0 9px #00d0ff inset;
+    border: none;
+  }
+
+  & button {
+    background-color: #00d0ff;
+    border: none;
+    border-radius: 12px;
+  }
+}
+
+.account-p {
+  cursor: pointer;
+}
+.completed {
+  text-decoration: line-through;
+  text-decoration-color: #e70303;
+  text-decoration-thickness: 4px;
+}
+body.dark .task-form-container {
+  & input {
+    background-color: #1a2d48;
+    color: #ccc;
+  }
+
+  & select {
+    background-color: #1a2d48;
+    color: #ccc;
+  }
+
+  & button {
+    background-color: transparent;
+    border: 1px solid #00d0ff;
+    color: rgb(213, 252, 255);
+    text-shadow: 2px 2px 10px rgba(11, 210, 255, 0.8);
+    box-shadow: 0 0 5px #00d0ff, 0 0 10px #00d0ff, 0 0 9px #00d0ff inset;
+    letter-spacing: 1px;
+
+    &:hover {
+      background-color: #00d0ff;
+      color: #19283d;
+    }
+  }
+}
+.task-form-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+
+  & input {
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+  }
+
+  & select {
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+  }
+}
+
+.task-form-title {
+  text-align: center;
+}
+body.dark .task-card {
+  background-color: #2f5d7c;
+  padding: 40px;
+  border: none;
+  border-radius: 12px;
+  display: flex;
+  width: 50%;
+  height: 100%;
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: 300px;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #ececec;
+  box-shadow: 4px 4px 8px #0000004c;
+}
+.task-card {
+  background-color: #fff;
+  padding: 40px;
+  border: none;
+  border-radius: 12px;
+  display: flex;
+  width: 50%;
+  height: 100%;
+  flex: 1 1 calc(33.333% - 20px);
+  max-width: 300px;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #120012;
+  box-shadow: 4px 4px 8px #ccc;
+}
+.task-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+  justify-content: start;
+  align-items: stretch;
+}
+body.dark .task-btn-container button {
+  background-color: #19283d;
+}
+.task-btn-container button {
+  background-color: #dfdfdf;
+  color: white;
+  border: none;
+  margin-right: 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.task-btn-container button:hover {
+  background-color: #3700b3;
+  transform: scale(1.05);
+}
+
+.edit-form-container {
+  display: flex;
+  gap: 20px;
+  border: 1px solid #d1d1d1;
+  padding: 10px;
+  border-radius: 4px;
+  margin-left: 10px;
+  & input {
+    border: none;
+    padding: 10px;
+  }
+
+  & select {
+    padding: 10px;
+    border: none;
+  }
+
+  & button {
+    background-color: rgb(255, 217, 0);
+    border-radius: 4px;
+
+    &:hover {
+      background-color: rgb(255, 204, 0);
+    }
+  }
+}
+body.dark .filter-container {
+  & select {
+    background-color: #1a2d48;
+    color: #ccc;
+    border: none;
+    border-radius: 12px;
+  }
+}
+.filter-container {
+  display: flex;
+  justify-content: end;
+  padding: 0 10px;
+
+  & select {
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+}
