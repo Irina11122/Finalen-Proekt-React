@@ -30,7 +30,12 @@ export const Navbar = () => {
   }, [darkMode]);
   return (
     <div className="navbar-container">
-      <h1 className="navbar-title"> Task Tracker </h1>
+      <div className="navbar-title-container">
+        <h1 className="navbar-title">
+          {' '}
+          no<span>TO-DO</span>{' '}
+        </h1>
+      </div>
       <div className="btn-container">
         {location.pathname === '/dashboard' && (
           <>

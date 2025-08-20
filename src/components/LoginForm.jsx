@@ -25,21 +25,27 @@ export const LoginForm = () => {
     }
   };
   return (
-    <div className="login-form-container">
-      <h3> Login NOW! </h3>
-      <input
-        type="text"
-        placeholder="Username"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
-      />
-      <input
-        type="password"
-        placeholder="Password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <button onClick={handleButton}> Login </button>
+    <div>
+      <div className="login-form-container">
+        <div className="patch"></div> <div className="patch-right"></div>
+        <h3> Login NOW! </h3>
+        <input
+          type="text"
+          placeholder="Username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <button className="login-btn" onClick={handleButton}>
+          {' '}
+          Login{' '}
+        </button>
+      </div>
     </div>
   );
 };

@@ -34,7 +34,7 @@ export const RegistrationForm = () => {
     navigate('/login');
   };
   return (
-    <div>
+    <div className="register-form-container">
       <h3> Registracija </h3> {message && <p> {message} </p>}
       <input
         type="text"
@@ -55,13 +55,13 @@ export const RegistrationForm = () => {
         onChange={(e) => setUsername(e.target.value)}
       />
       <input
-        type="text"
+        type="email"
         placeholder="Email:"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
       <input
-        type="text"
+        type="password"
         placeholder="Password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
