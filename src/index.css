@@ -439,7 +439,7 @@ body.dark .filter-container {
     border: 1px solid #ccc;
   }
   .navbar-title-container {
-    background: linear-gradient(to right, #775fd4, #d1c6ff);
+    background: transparent;
     width: 100%;
     display: flex;
     justify-content: center;
