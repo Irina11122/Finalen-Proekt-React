@@ -24,33 +24,37 @@ export const TaskForm = ({ addTodo }) => {
 
   return (
     <div>
-      <h1 className="task-form-title"> Get Things Done! </h1>
       <form className="task-form-container" onSubmit={handleSubmit}>
         {' '}
-        <input
-          onChange={(e) => setTask(e.target.value)}
-          value={task}
-          type="text"
-          placeholder="What do you want to do?"
-        />{' '}
-        <input
-          onChange={(e) => setDescription(e.target.value)}
-          value={description}
-          type="text"
-          placeholder="Describe the task"
-        />
-        <select onChange={(e) => setPriority(e.target.value)}>
-          <option value="High"> High </option>
-          <option value="Medium"> Medium </option>
-          <option value="Low"> Low </option>
-        </select>
-        <input
-          onChange={(e) => setDueDate(e.target.value)}
-          value={dueDate}
-          type="date"
-          placeholder="What do you want to do?"
-        />
-        <button type="submit"> Add Task </button>
+        <div>
+          <input
+            onChange={(e) => setDescription(e.target.value)}
+            value={description}
+            type="text"
+            placeholder="Describe the task"
+          />
+          <select onChange={(e) => setPriority(e.target.value)}>
+            <option value="High"> High </option>
+            <option value="Medium"> Medium </option>
+            <option value="Low"> Low </option>
+          </select>
+          <input
+            onChange={(e) => setDueDate(e.target.value)}
+            value={dueDate}
+            type="date"
+            placeholder="What do you want to do?"
+          />
+        </div>
+        <div>
+          {' '}
+          <input
+            onChange={(e) => setTask(e.target.value)}
+            value={task}
+            type="text"
+            placeholder="What do you want to do?" className='add-input'
+          />{' '}
+          <button className='add-btn' type="submit"> Add Task </button>
+        </div>
       </form>
     </div>
   );

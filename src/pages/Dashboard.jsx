@@ -5,19 +5,24 @@ export const Dashboard = () => {
   const [filter, setFilter] = useState('all');
   const [priorityFilter, setPriorityFilter] = useState('High');
   return (
-    <div>
+    <div className='cont'>
       <div className="filter-container">
         {' '}
         <div className="filter-buttons">
-          <button value="all" onClick={(e) => setFilter(e.target.value)}>
-            All
-          </button>
-          <button value="todo" onClick={(e) => setFilter(e.target.value)}>
-            TODO
-          </button>
-          <button value="completed" onClick={(e) => setFilter(e.target.value)}>
-            DONE
-          </button>
+          <div>
+            <button value="all" onClick={(e) => setFilter(e.target.value)}>
+              All
+            </button>
+            <button value="todo" onClick={(e) => setFilter(e.target.value)}>
+              TODO
+            </button>
+            <button
+              value="completed"
+              onClick={(e) => setFilter(e.target.value)}
+            >
+              DONE
+            </button>
+          </div>
 
           <div>
             <button
